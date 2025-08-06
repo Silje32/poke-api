@@ -1,4 +1,5 @@
 import "./style.css";
+import { setupPokemonForm } from "./modules/setupPokemonForm.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -9,3 +10,5 @@ document.querySelector("#app").innerHTML = `
     </form>
   </div>
 `;
+
+setupPokemonForm(document.querySelector("#searchPokemonForm"));
