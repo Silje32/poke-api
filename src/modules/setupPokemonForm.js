@@ -1,6 +1,12 @@
+import { fetchPokemon } from "./fetchPokemon.js";
+
 export const setupPokemonForm = (formElement) => {
-  formElement.addEventlistener("submit", (e) => {
+  formElement.addEventListener("submit", async (e) => {
     e.preventDefault();
-    console.log(e);
+
+    const form = new FormData(formElement);
+    const searchInput = form.get("searchPokemonInput");
+    const pokemon = await fetchPokemon();
+    alert(`Your pokemon is:`, pokemon.name);
   });
 };
