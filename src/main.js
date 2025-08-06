@@ -5,7 +5,11 @@ document.querySelector("#app").innerHTML = `
   <div>
     <h1>Pokedex</h1>
     <form id="searchPokemonForm">
-    <input id="searchPokemonInput" type="text"></input>
+    <input
+         id="searchPokemonInput" 
+         type="text"
+         name="searchPokemonInput"
+    >
     <input type="submit"></input>
     </form>
   </div>
