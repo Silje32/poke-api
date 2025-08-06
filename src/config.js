@@ -1,1 +1,1 @@
-export const pokemonApiUrl = "https://pokeapi.co/api";
+export const pokemonApiUrl = "https://pokeapi.co/api/v2";
