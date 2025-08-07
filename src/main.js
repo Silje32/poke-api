@@ -9,8 +9,9 @@ document.querySelector("#app").innerHTML = `
          type="text"
          name="searchPokemonInput"
     >
-    <input type="submit"></input>
+    <input type="submit">
     </form>
+    <div id="pokemonCard"></div>
   </div>
 `;
 
