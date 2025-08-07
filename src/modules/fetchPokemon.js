@@ -8,7 +8,7 @@ export const fetchPokemon = async (pokemon) => {
 
   let pokemonData = null;
   try {
-    const pokemonData = await response.json();
+    pokemonData = await response.json();
   } catch (err) {
     throw new Error("Failed to get JSON from fetchPokemon.");
   }
