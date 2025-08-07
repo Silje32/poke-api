@@ -1,4 +1,5 @@
 import { fetchPokemon } from "./fetchPokemon.js";
+import { renderPokemonCard } from "./renderPokemonCard.js";
 
 export const setupPokemonForm = (formElement) => {
   formElement.addEventListener("submit", async (e) => {
@@ -9,7 +10,6 @@ export const setupPokemonForm = (formElement) => {
     const pokemon = await fetchPokemon(searchInput);
 
     // Render pokemon card
-
-    alert(`Your pokemon is: ${pokemon.sprites.front_default}`);
+    renderPokemonCard(document.querySelector("#pokemonCard"), pokemon);
   });
 };
