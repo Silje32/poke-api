@@ -1,4 +1,4 @@
-import { renderPokemonImage } from "./renderPokemonImage";
+import { renderPokemonImage } from "./renderPokemonImage.js";
 
 // Bilde av pokemon, knapper, navn
 export const renderPokemonCard = (pokemonCardElement, pokemonObj) => {
