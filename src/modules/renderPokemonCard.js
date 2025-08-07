@@ -18,7 +18,7 @@ export const renderPokemonCard = (pokemonCardElement, pokemonObj) => {
   const rotateBtn = document.createElement("button");
   rotateBtn.textContent = "Rotate";
   rotateBtn.addEventListener("click", () => {
-    (viewDirection === viewDirection) === "front" ? "back" : "front";
+    viewDirection = viewDirection === "front" ? "back" : "front";
     imgElement.src = renderPokemonImage(pokemonObj, shiny, sex, viewDirection);
   });
 
