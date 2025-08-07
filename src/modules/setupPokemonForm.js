@@ -7,6 +7,6 @@ export const setupPokemonForm = (formElement) => {
     const form = new FormData(formElement);
     const searchInput = form.get("searchPokemonInput");
     const pokemon = await fetchPokemon();
-    alert(`Your pokemon is: ${pokemon}`);
+    alert(`Your pokemon is: ${pokemon.sprites.front_default}`);
   });
 };
