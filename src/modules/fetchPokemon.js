@@ -10,7 +10,7 @@ export const fetchPokemon = async (pokemon) => {
   try {
     const pokemonData = await response.json();
   } catch (err) {
-    throw new Error("Failed to get JSON from fetchPokemon");
+    throw new Error("Failed to get JSON from fetchPokemon.");
   }
   return pokemonData;
 };
