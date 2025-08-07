@@ -1,4 +1,3 @@
-import "./style.css";
 import { setupPokemonForm } from "./modules/setupPokemonForm.js";
 
 document.querySelector("#app").innerHTML = `
